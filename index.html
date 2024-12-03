@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Instituto Tecnológico de Saltillo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #d32f2f; /* Rojo */
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #b71c1c; /* Rojo oscuro */
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            background: #fff; /* Fondo blanco */
+            color: #000; /* Texto negro */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #b71c1c; /* Rojo oscuro */
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #d32f2f;
+            color: white;
+            margin-top: 20px;
+        }
+        .indice {
+            margin-bottom: 30px;
+        }
+        .indice a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #b71c1c;
+            font-weight: bold;
+        }
+        .indice a:hover {
+            text-decoration: underline;
+        }
+        .downloads a {
+            color: #b71c1c;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .downloads a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instituto Tecnológico de Saltillo</h1>
+        <h2>Proyecto Final</h2>
+    </header>
+    <section>
+        <h2>Índice</h2>
+        <div class="indice">
+            <a href="#unidad1">Unidad 1: Modelos de Arquitectura de Cómputo</a>
+            <a href="#unidad2">Unidad 2: Organización del Procesador</a>
+            <a href="#unidad3">Unidad 3: Jerarquía de Memoria</a>
+            <a href="#unidad4">Unidad 4: Periféricos y Dispositivos de Entrada/Salida</a>
+            <a href="#practicas">Prácticas Realizadas</a>
+        </div>
+    </section>
+
+    <section id="unidad1">
+        <h2>Unidad 1: Modelos de Arquitectura de Cómputo</h2>
+        <h3>Modelos de arquitectura</h3>
+        <p>Incluyen la arquitectura de Von Neumann, Harvard, paralela, y los enfoques RISC y CISC. Estos modelos definen cómo interactúan los componentes del sistema y cómo se procesan las instrucciones.</p>
+        <h3>Análisis de componentes</h3>
+        <p>Componentes clave como la CPU, memoria, dispositivos de entrada/salida, y buses trabajan juntos para realizar las tareas computacionales. Destacan los registros, ALU y CU dentro de la CPU.</p>
+        <h3>Memoria</h3>
+        <p>La memoria almacena instrucciones y datos para el procesamiento. Se clasifica en memoria primaria (RAM, ROM) y secundaria (discos duros, SSD).</p>
+    </section>
+
+    <section id="unidad2">
+        <h2>Unidad 2: Organización del Procesador</h2>
+        <h3>Organización del Procesador y Estructura de Registros</h3>
+        <p>Los registros internos almacenan datos temporales y son esenciales para la ejecución de instrucciones. La arquitectura del procesador incluye ALU, unidad de control y registros como acumuladores, punteros de pila, y registros de propósito general.</p>
+        <h3>El Ciclo de la Instrucción</h3>
+        <p>Se divide en:</p>
+        <ul>
+            <li><b>Búsqueda:</b> Recupera la instrucción de la memoria.</li>
+            <li><b>Decodificación:</b> Interpreta la instrucción en lenguaje máquina.</li>
+            <li><b>Ejecución:</b> Lleva a cabo la operación usando la ALU y los registros.</li>
+        </ul>
+    </section>
+
+    <section id="unidad3">
+        <h2>Unidad 3: Jerarquía de Memoria</h2>
+        <h3>Niveles de Memoria</h3>
+        <p>La jerarquía de memoria incluye:</p>
+        <ul>
+            <li><b>Memoria Caché:</b> Pequeña y rápida, almacena datos utilizados frecuentemente.</li>
+            <li><b>Memoria Principal:</b> RAM, utilizada para almacenamiento temporal durante la ejecución de programas.</li>
+            <li><b>Memoria Secundaria:</b> Discos duros y SSD, ofrecen almacenamiento permanente.</li>
+        </ul>
+        <h3>Latencia y Velocidad</h3>
+        <p>A medida que se desciende en la jerarquía, aumenta la capacidad pero disminuye la velocidad de acceso.</p>
+    </section>
+
+    <section id="unidad4">
+        <h2>Unidad 4: Periféricos y Dispositivos de Entrada/Salida</h2>
+        <h3>Clasificación de los Periféricos</h3>
+        <p>Los periféricos se dividen en:</p>
+        <ul>
+            <li><b>Dispositivos de Entrada:</b> Teclado, ratón, escáner, micrófono.</li>
+            <li><b>Dispositivos de Salida:</b> Monitor, impresora, altavoces.</li>
+            <li><b>Dispositivos de Entrada/Salida:</b> Pantallas táctiles, unidades USB.</li>
+        </ul>
+        <h3>Interfaces de Entrada/Salida</h3>
+        <p>Incluyen tecnologías como USB, HDMI, PCIe y SATA.</p>
+        <h3>Dispositivos de Almacenamiento</h3>
+        <p>Discos duros, SSD, memorias USB, y tarjetas de memoria son ejemplos clave.</p>
+        <h3>Protocolos de Comunicación</h3>
+        <p>Protocolos como I²C, SPI y Bluetooth facilitan la interacción entre periféricos y sistemas.</p>
+    </section>
+
+    <section id="practicas">
+    <h2>Prácticas Realizadas</h2>
+    <p>A continuación, puedes descargar los documentos de las prácticas realizadas durante el semestre:</p>
+    <div class="downloads">
+        <a href="PracticaNum1.pdf" download>Práctica 1: Practica Numero 1</a>
+        <a href="PracticaNum2.docx" download>Práctica 2: Practica Numero 2</a>
+        <a href="PracticaNum3.docx" download>Práctica 3: Practica Numero 3</a>
+        <a href="PracticaNum4.docx" download>Práctica 4: Practica Numero 4</a>
+        <a href="PracticaNum5.docx" download>Práctica 5: Practica Numero 5</a>
+    </div>
+</section>
+    <footer>
+        <p>Instituto Tecnológico de Saltillo | Proyecto Final</p>
+    </footer>
+</body>
+</html>
